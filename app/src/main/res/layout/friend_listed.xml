@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".FriendList">
+
+    <!-- HEADER -->
+    <TextView
+        android:id="@+id/headerFrilist"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/title_box"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/daFren"
+        android:textAppearance="@style/BoldText"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:ignore="MissingConstraints,TextSizeCheck,TextContrastCheck" />
+
+    <!-- RECYCLERVIEW -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listTeman"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/headerFrilist"
+        android:layout_above="@+id/buttonContainer"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:visibility="visible"
+        android:contentDescription="@string/semuaUser" />
+
+    <!-- CONTAINER BUTTON -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        android:layout_marginBottom="-275dp"
+        android:background="@color/darky_wangsaff"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:ignore="VisualLintBounds">
+
+        <EditText
+            android:id="@+id/menCariTeman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_box"
+            android:hint="@string/nyariTeman"
+            android:importantForAutofill="no"
+            android:textColor="?attr/colorSecondary"
+            android:textColorHint="?attr/colorSecondary"
+            android:textAppearance="?attr/colorSecondary"
+            android:paddingStart="14dp"
+            android:textSize="20sp"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            tools:ignore="RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:padding="8dp">
+
+                <!-- Button Kiri -->
+                <Button
+                    android:id="@+id/butanUnfren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/kiRemove"
+                    android:textColor="@color/lightNess"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:background="@drawable/send_btn"
+                    tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+                <!-- Button Tengah -->
+                <Button
+                    android:id="@+id/butanProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/tomTengah"
+                    android:textColor="@color/lightNess"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:background="@drawable/send_btn"
+                    tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+                <!-- Button Kanan -->
+                <Button
+                    android:id="@+id/butanTambah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/kaNambah"
+                    android:textColor="@color/lightNess"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:background="@drawable/send_btn"
+                    tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

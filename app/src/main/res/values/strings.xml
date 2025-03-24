@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--[ Part A ][ Mains ]-->
+    <string name="app_name">"Yoyou Chattalk"</string>
+    <string name="changeLD">Light or Dark</string>
+
+    <string name="keNamae">"Name"</string>
+    <string name="keEmail">"Email"</string>
+    <!--//-->
+    <string name="mintAiden">"Name or Email"</string>
+    <!--//-->
+    <string name="ktSandi">"Password"</string>
+
+    <string name="daChenji">"%1$s"</string>
+
+    <string name="ykaNamae">"Your Name"</string>
+    <string name="ykaEmail">"Your Email"</string>
+    <string name="ykaSandi">"Your Password"</string>
+
+    <string name="namaeChenji">"Rename"</string>
+    <string name="emailChenji">"Change Email"</string>
+    <string name="sandiChenji">"Change Password"</string>
+
+    <string name="logbIn_a1">"Login"</string>
+    <string name="signUp_a1">"Create"</string>
+    <!--//-->
+    <string name="logbIn_a2">"Log In"</string>
+    <string name="signUp_a2">"Sign Up"</string>
+    <!--[ Part A ][ Mains ]--><!--[ Part A ][ Decos ]-->
+    <string name="text_a01">"Project 2"</string>
+    <string name="text_a02">"By: Group 13"</string>
+    <string name="madeby_01">"Aditya Rahman"</string>
+    <string name="darkIng">"Light"</string>
+    <string name="lightIng">"Dark"</string>
+    <!--[ Part A ][ Decos ]-->
+
+    <!--[ Part B ][ List ]-->
+    <string name="listerName">"Name-User"</string>
+    <string name="listerMSG">"Let's type Message for showing the Message."</string>
+    <string name="namaFren">"Friends"</string>
+
+    <string name="gakDaGuna">"Anonymed"</string>
+
+    <string name="kiRemove">"Unfriend"</string>
+    <string name="tomTengah">"Profile"</string>
+    <string name="kaNambah">"Add Friend"</string>
+    <string name="daFren">"%1$s's Friends"</string>
+    <string name="nyariTeman">"Search your Friends"</string>
+
+    <string name="profilUseran">"Your Profile"</string>
+    <!--[ Part B ][ List ]--><!--[ Part B ][ Decod ]-->
+    <string name="semuaUser">"Item list container"</string>
+    <string name="testChattin">"Chat: %1$s"</string>
+    <string name="pesanChat">"Chat Context"</string>
+    <string name="chatType" tools:ignore="TypographyEllipsis">"Let's type Chat as writing..."</string>
+    <string name="chatSend">"Send"</string>
+    <string name="kirimChatKiri">"Chatting Message Left"</string>
+    <string name="kirimChatKanan">"Chatting Message Right"</string>
+    <!--[ Part B ][ Decod ]-->
+
+</resources>

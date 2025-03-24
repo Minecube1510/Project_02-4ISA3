@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/tandaProfilan"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:text="@string/profilUseran"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/lightNess"
+        android:background="@drawable/title_set"/>
+
+    <RelativeLayout
+        android:id="@+id/profilData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tandaProfilan"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/profilNamae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:background="@drawable/kontein_profile"
+            tools:ignore="VisualLintBounds">
+            <TextView
+                android:id="@+id/inisialNamae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/keNamae"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tandaNamae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inisialNamae"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/daChenji"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/ubahNamae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tandaNamae"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/ykaNamae"
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textColorHint="?attr/colorSecondary"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:importantForAutofill="no"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck,RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/nombolNamae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ubahNamae"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/namaeChenji"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/lightNess"
+                android:background="@drawable/send_btn"
+                tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:layout_below="@id/profilNamae"
+            android:background="@drawable/kontein_profile"
+            tools:ignore="VisualLintBounds">
+            <TextView
+                android:id="@+id/inisialEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/keEmail"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tandaEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inisialEmail"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/daChenji"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/ubahEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tandaEmail"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/ykaEmail"
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textColorHint="?attr/colorSecondary"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:importantForAutofill="no"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck,RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/nombolEmail"
+                android:layout_below="@id/ubahEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/emailChenji"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/lightNess"
+                android:background="@drawable/send_btn"
+                tools:ignore="VisualLintButtonSize" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profilSandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="0dp"
+            android:padding="8dp"
+            android:layout_below="@id/profilEmail"
+            android:background="@drawable/kontein_profile"
+            tools:ignore="VisualLintBounds">
+            <TextView
+                android:id="@+id/inisialSandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ktSandi"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tandaSandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inisialSandi"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/daChenji"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/ubahSandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tandaSandi"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/ykaSandi"
+                android:inputType="textPassword"
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textColorHint="?attr/colorSecondary"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:minHeight="48dp"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck,RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/nombolSandi"
+                android:layout_below="@id/ubahSandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/sandiChenji"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/lightNess"
+                android:background="@drawable/send_btn"
+                tools:ignore="VisualLintButtonSize" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

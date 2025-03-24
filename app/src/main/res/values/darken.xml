@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mode: Dark -->
+    <style name="Theme.KosongDua.Dark" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Warna Utama: Bekgron, Latar Belakang -->
+        <item name="colorPrimary">@color/darkNess</item> <!--[Bekgron]-->
+        <item name="colorOnPrimary">@color/lightText</item> <!--[Teks Edit]-->
+        <item name="colorPrimaryVariant">@color/green_hackDark</item> <!--[Tombol]-->
+        <!-- Warna Sekunder: Dekor -->
+        <item name="colorSecondary">@color/lightNess</item> <!--[Teks Pandang]-->
+        <item name="colorOnSecondary">@color/green_hackLight</item> <!--[?]-->
+        <item name="colorSecondaryVariant">@color/white</item> <!--[?]-->
+        <!-- Warna Bawahannya: Dekor -->
+        <item name="colorPrimaryContainer">@color/hoverLight_wangsaff</item>
+        <item name="colorOnPrimaryContainer">@color/lightNess</item> <!-- Teks terang di Light Mode -->
+        <item name="colorOutline">@color/compact03</item>
+        <item name="colorOnContainer">@color/lightMatch</item>
+        <item name="colorSecondaryContainer">@color/light_surface</item>
+        <item name="colorOnSecondaryContainer">@color/dark_surface</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetAPI="l">?attr/colorPrimaryVariant</item>
+    </style>
+    <!-- Mode: Dark -->
+</resources>

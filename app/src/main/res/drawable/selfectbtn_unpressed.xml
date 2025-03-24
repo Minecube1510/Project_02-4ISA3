@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State default HARUS PAKAI CORNERS -->
+    <solid android:color="@color/basic_wangsaff" />
+    <!-- Radius 12dp (sesuaikan dengan kebutuhan) -->
+    <corners android:radius="10dp"/>
+    <!-- Border 2dp dengan warna kontras -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/darkNess" />
+    <!-- Pakai warna outline dari tema -->
+</shape>

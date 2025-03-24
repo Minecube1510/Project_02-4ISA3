@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:importantForAutofill="no"
+    tools:context=".LogInAct">
+
+    <!--/ Gambar Utama /-->
+    <ImageView
+        android:id="@+id/aikonLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/logo_apeka" />
+    <!--/ Gambar Utama /-->
+
+    <!--/ Elemen Utama /-->
+    <!-- Masuk: Namae Identitas -->
+    <EditText
+        android:id="@+id/mintaAiden"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/aikonLogo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/auth_input"
+        android:hint="@string/mintAiden"
+        android:textAppearance="@style/BoldText"
+        android:importantForAutofill="no"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColorHint="@color/compact02"
+        android:textColor="?attr/colorSecondary"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+    <!-- Masuk: Sandi Pass_Word -->
+    <EditText
+        android:id="@+id/mintaSandi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/mintaAiden"
+        android:textAppearance="@style/BoldText"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/auth_input"
+        android:hint="@string/ktSandi"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/compact02"
+        android:textColor="?attr/colorSecondary"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <!-- Konfirmasi: Membuat Identitas (Log In) -->
+    <Button
+        android:id="@+id/getLogIn_a2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/mintaSandi"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/auth_btn"
+        android:hint="@string/logbIn_a2"
+        android:textAppearance="@style/BoldText"
+        android:textColorHint="?attr/colorSecondary"
+        android:textSize="28sp" />
+    <!-- Konfirmasi: Membuat Identitas (Sign Up) -->
+    <Button
+        android:id="@+id/toSignUp_a2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/mintaSandi"
+        android:layout_marginStart="210dp"
+        android:layout_marginEnd="225dp"
+        android:background="@drawable/auth_btn"
+        android:hint="@string/signUp_a2"
+        android:textAppearance="@style/BoldText"
+        android:textColorHint="?attr/colorSecondary"
+        android:textSize="28sp" />
+    <!--/ Elemen Utama /-->
+
+
+    <!--/ Dekor Teks /-->
+    <TextView
+        android:id="@+id/indicate_01a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mintaSandi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:gravity="center"
+        android:text="@string/text_a01"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+    <TextView
+        android:id="@+id/title_01b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/indicate_01a"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/groupmade_02a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_01b"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/text_a02"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+    <TextView
+        android:id="@+id/group_02b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/groupmade_02a"
+        android:gravity="center"
+        android:text="@string/madeby_01"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+    <!--/ Dekor Teks /-->
+
+</RelativeLayout>

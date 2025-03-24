@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kontenChatKanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/chatbox_self"
+        android:layoutDirection="locale"
+        tools:ignore="UselessParent,TextSizeCheck">
+
+        <!-- Text Utama (Lebar menyesuaikan konten) -->
+        <TextView
+            android:id="@+id/isiChatKanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="240dp"
+            android:paddingTop="2dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="2dp"
+            android:text="@string/kirimChatKanan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" /><!-- Text mengikuti sisi kanan bubble -->
+
+        <!-- Container Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isiChatKanan"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"> <!-- Container status sejajar kanan -->
+
+            <TextView
+                android:id="@+id/hariChatKanan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/daChenji"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/jamChatKanan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/daChenji"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
